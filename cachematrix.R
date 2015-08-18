@@ -19,11 +19,11 @@ list( set=set , get=get , setinverse=setinverse , getinverse=getinverse)
 }
 
 ## the following function calculates the inverse
-## of created matrix that is created before. If so,
-## it gets the inverse from the cache and skips 
+## of created matrix. If the inverse of matrix x
+## is already computed, it gets the result and skips 
 ## the computation. Otherwise, it calculates the
 ## the matrix inverse and sets the value of the 
-## inverse in the cache via the setinverse function.
+## inverse in the cache using setinverse function.
 
 cacheSolve <- function(x, ...) {
 ## Return a matrix that is the inverse of 'x'
