@@ -38,5 +38,5 @@ if(!is.null(m)){
 data <- x$get()
 m <- solve(data, ...)  
 x$setinverse(m)
-m  ##Return it
+m  ##Return the cached inverse
 }
